@@ -187,19 +187,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hakkımızda</title>
     <style>
-      body, html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        width: 100%;
-        
-      }
-  
+      
       .video-container {
         position: relative;
-        height: 100vh;
+        height: 125vh;
         overflow: hidden;
       }
+      @media (max-width: 768px) {
+        .video-container {
+            height: 200vh; /* Increased height for mobile */
+        }
+
+        .text-box {
+            padding: 15px;
+        }
+
+        .text-box h1 {
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 0.9em;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .video-container {
+            height: 250vh; /* Further increased height for very small screens */
+        }
+
+        .text-box {
+            padding: 10px;
+        }
+
+        .text-box h1 {
+            font-size: 1.8em;
+        }
+
+        p {
+            font-size: 0.8em;
+        }
+    }
   
       .video-container video {
         position: absolute;
@@ -245,7 +273,8 @@
       }
     </style>
   </head>
-  <body>
+  
+  <section>
     <div class="video-container">
       <video autoplay muted loop>
         <source src="assets/images/hakkımızdalış.mp4" type="video/mp4">
@@ -253,7 +282,7 @@
       </video>
   
       <div class="content">
-        
+        <br><br>
         <div class="text-box">
             <div class="main-title title">
                 <h1 class="split-collab">Hakkımızda</h1></div>
@@ -278,10 +307,11 @@
                 <p>Jollin’in uzun vadeli hedefi, Türkiye’nin 81 iline ulaşarak her şehirde sosyal faaliyetlerin mümkün olduğunu göstermektir. Genç nüfusumuz ve doğamız, her türlü spor ve sosyal etkinlik için uygun bir ortam sunuyor. Amacımız, Türkiye’nin her köşesinde insanlara bu faaliyetleri keşfetme fırsatı sunmak.</p>
             </div>      
  
-</div>
+        </div>
+        <br><br>
       </div>
     </div>
-  </body>
+  </section>
 
 <!-- End Bread Crumb Area Home 1 -->
 
