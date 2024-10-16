@@ -18,7 +18,15 @@
 
     <!--favicon-->
     <link rel="icon" href="assets/images/favicon.png">
-
+    <style>
+        header {
+    position: fixed; /* Header'ı sabit yapar, sayfada yukarıda kalmasını sağlar */
+    top: 0; /* Header'ı sayfanın en üstünde tutar */
+    left: 0;
+    width: 100%; /* Header'ı sayfanın tamamına yayar */
+    z-index: 1000; /* Header'ı diğer öğelerin önüne geçirir */
+}
+    </style>
 </head>
 
 <body>
@@ -142,7 +150,7 @@
     <!-- End Search Bar Popup Home 2 -->
 
     <!-- Start Mobile Menu Home 1 -->
-    <div class="nft-mobile-menu">
+    <!-- <div class="nft-mobile-menu">
         <button class="close-menu float-end"><i class="fa-solid fa-xmark"></i></button>
         <a class='mobile-menu-logo' href="index.html"><img src="assets/images/logo/logo-1.svg" alt="VRE"></a>
         <ul>
@@ -197,7 +205,7 @@
         <div class="mobile-menu-copy-right-text">
             <p><span>© 2024</span> website_stock . All Rights Reserved.</p>
         </div>
-    </div>
+    </div> -->
     <!-- End Mobile Menu Home 1 -->
 
     <!-- Start Bread Crumb Area Home 1 -->
