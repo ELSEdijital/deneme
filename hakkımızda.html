@@ -188,130 +188,130 @@
     <title>Hakkımızda</title>
     <style>
       
-      .video-container {
-        position: relative;
-        height: 125vh;
-        overflow: hidden;
-      }
-      @media (max-width: 768px) {
         .video-container {
-            height: 200vh; /* Increased height for mobile */
+          position: relative;
+          height: 125vh;
+          overflow: hidden;
         }
-
+        @media (max-width: 768px) {
+          .video-container {
+              height: 200vh; /* Increased height for mobile */
+          }
+  
+          .text-box {
+              padding: 15px;
+          }
+  
+          .text-box h1 {
+              font-size: 2em;
+          }
+  
+          p {
+              font-size: 0.9em;
+          }
+      }
+  
+      @media (max-width: 480px) {
+          .video-container {
+              height: 250vh; /* Further increased height for very small screens */
+          }
+  
+          .text-box {
+              padding: 10px;
+          }
+  
+          .text-box h1 {
+              font-size: 1.8em;
+          }
+  
+          p {
+              font-size: 0.8em;
+          }
+      }
+    
+        .video-container video {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          min-width: 100%;
+          min-height: 100%;
+          z-index: -1;
+        }
+    
+        .content {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: rgba(0, 0, 0, 0.5); /* Arka planı hafif karartma */
+        }
+    
         .text-box {
-            padding: 15px;
+          max-width: 1200px;
+          color: rgb(255, 237, 237);
+          padding: 20px;
+          background-color: rgba(35, 35, 35, 0.7); /* Arka planı hafif karartma */
+          border-radius: 10px;
+          text-align: left;
         }
-
-        .text-box h1 {
-            font-size: 2em;
-        }
-
-        p {
-            font-size: 0.9em;
-        }
+    .text-box h1{
+      text-align: center;
     }
-
-    @media (max-width: 480px) {
-        .video-container {
-            height: 250vh; /* Further increased height for very small screens */
+        h1 {
+          font-size: 2.5em;
+          margin-bottom: 20px;
         }
-
-        .text-box {
-            padding: 10px;
-        }
-
-        .text-box h1 {
-            font-size: 1.8em;
-        }
-
+    
         p {
-            font-size: 0.8em;
+          font-size: 1em;
+          line-height: 1.5;
         }
-    }
-  
-      .video-container video {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        min-width: 100%;
-        min-height: 100%;
-        z-index: -1;
-      }
-  
-      .content {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: rgba(0, 0, 0, 0.5); /* Arka planı hafif karartma */
-      }
-  
-      .text-box {
-        max-width: 1200px;
-        color: rgb(255, 237, 237);
-        padding: 20px;
-        background-color: rgba(35, 35, 35, 0.7); /* Arka planı hafif karartma */
-        border-radius: 10px;
-        text-align: left;
-      }
-  .text-box h1{
-    text-align: center;
-  }
-      h1 {
-        font-size: 2.5em;
-        margin-bottom: 20px;
-      }
-  
-      p {
-        font-size: 1em;
-        line-height: 1.5;
-      }
-    </style>
-  </head>
-  
-  <section>
-    <div class="video-container">
-      <video autoplay muted loop>
-        <source src="assets/images/hakkımızdalış.mp4" type="video/mp4">
-        Tarayıcınız video etiketini desteklemiyor.
-      </video>
-  
-      <div class="content">
-        <br><br>
-        <div class="text-box">
-            <div class="main-title title">
-                <h1 class="split-collab">Hakkımızda</h1></div>
-            <div class="container">
-            
-            
-                <p><strong>Jollin</strong>, gençleri monoton yaşamlarından uzaklaştırarak daha sosyal ve aktif bir topluluk yaratmayı amaçlayan bir platformdur. Kulüpler ve etkinlik organizatörleri ile insanları bir araya getiren Jollin, her şehirde her türlü spor ve eğlence faaliyetinin gerçekleştirilebileceğini göstermek için burada.</p>
-            <br>
-                <h3>Nasıl Başladık?</h3>
-                <p>Jollin, üniversite yıllarımızı geçirdiğimiz Sivas’ta sosyal aktivitelerin kısıtlı olması nedeniyle başladı. Bisiklet, kamp, kayak gibi kulüpler kurarak etkinlikler düzenlemeye çalışıyorduk, ancak yeterli kitleye ulaşmakta zorlanıyorduk. İşte bu eksiklikten yola çıkarak Jollin'i hayata geçirdik: İnsanları bir araya getirecek ve etkinliklerin doğru kitleye ulaşmasını sağlayacak bir platform oluşturduk.</p>
-            <br>
-                <h3>Ekibimiz</h3>
-                <p>Jollin ekibi, yazılım geliştiricilerden ve saha ekiplerinden oluşan geniş bir kadroya sahip. Yazılım ekibimiz, uygulamanın sorunsuz çalışmasını sağlarken, saha ekibimiz kulüplerle birebir görüşerek onları platforma dahil ediyor. Amacımız, etkinlik organizatörlerini destekleyip kullanıcılarımıza kusursuz bir deneyim sunmak.</p>
-            <br>
-                <h3>Neden Jollin?</h3>
-                <p>Jollin’i diğer etkinlik platformlarından ayıran en büyük fark, sadece kurumsal organizasyonlara değil, her topluluğa hitap etmesidir. Kurumsal olmayan topluluklar bile Jollin sayesinde etkinliklerini düzenleyip yönetebilir. Ayrıca, tüm etkinlik süreçlerini kolaylaştırır. Örneğin, kayak yapmak istediğinizde ayrı ayrı servis, ekipman kiralama, skipass ve yemek organize etmek zorunda kalırsınız. Jollin ile tüm bu işlemleri tek bir ödeme ile halledebilir, sadece eğlenmeye odaklanabilirsiniz.</p>
-            <br>
-                <h3>Kullanıcılara ve Kulüplere Sağladığımız Avantajlar</h3>
-                <p>Jollin, kullanıcıların şehirdeki etkinliklerden haberdar olmasını kolaylaştırır ve dolandırıcılığa karşı güvenli bir platform sunar. Kulüpler ve organizatörler için ise üye yönetimi, geniş kitlelere ulaşma ve etkinliklerin profesyonel bir şekilde organize edilmesini sağlar. Herkes için daha planlı, programlı ve güvenli bir etkinlik ortamı oluşturuyoruz.</p>
-            <br>
-                <h3>Gelecek Hedeflerimiz</h3>
-                <p>Jollin’in uzun vadeli hedefi, Türkiye’nin 81 iline ulaşarak her şehirde sosyal faaliyetlerin mümkün olduğunu göstermektir. Genç nüfusumuz ve doğamız, her türlü spor ve sosyal etkinlik için uygun bir ortam sunuyor. Amacımız, Türkiye’nin her köşesinde insanlara bu faaliyetleri keşfetme fırsatı sunmak.</p>
-            </div>      
- 
+      </style>
+    </head>
+    
+    <section>
+      <div class="video-container">
+        <video autoplay muted loop>
+          <source src="assets/images/hakkımızdalış.mp4" type="video/mp4">
+          Tarayıcınız video etiketini desteklemiyor.
+        </video>
+    
+        <div class="content">
+          <br><br>
+          <div class="text-box">
+              <div class="main-title title">
+                  <h1 class="split-collab">Hakkımızda</h1></div>
+              <div class="container">
+              
+              
+                  <p><strong>Jollin</strong>, gençleri monoton yaşamlarından uzaklaştırarak daha sosyal ve aktif bir topluluk yaratmayı amaçlayan bir platformdur. Kulüpler ve etkinlik organizatörleri ile insanları bir araya getiren Jollin, her şehirde her türlü spor ve eğlence faaliyetinin gerçekleştirilebileceğini göstermek için burada.</p>
+              <br>
+                  <h3>Nasıl Başladık?</h3>
+                  <p>Jollin, üniversite yıllarımızı geçirdiğimiz Sivas’ta sosyal aktivitelerin kısıtlı olması nedeniyle başladı. Bisiklet, kamp, kayak gibi kulüpler kurarak etkinlikler düzenlemeye çalışıyorduk, ancak yeterli kitleye ulaşmakta zorlanıyorduk. İşte bu eksiklikten yola çıkarak Jollin'i hayata geçirdik: İnsanları bir araya getirecek ve etkinliklerin doğru kitleye ulaşmasını sağlayacak bir platform oluşturduk.</p>
+              <br>
+                  <h3>Ekibimiz</h3>
+                  <p>Jollin ekibi, yazılım geliştiricilerden ve saha ekiplerinden oluşan geniş bir kadroya sahip. Yazılım ekibimiz, uygulamanın sorunsuz çalışmasını sağlarken, saha ekibimiz kulüplerle birebir görüşerek onları platforma dahil ediyor. Amacımız, etkinlik organizatörlerini destekleyip kullanıcılarımıza kusursuz bir deneyim sunmak.</p>
+              <br>
+                  <h3>Neden Jollin?</h3>
+                  <p>Jollin’i diğer etkinlik platformlarından ayıran en büyük fark, sadece kurumsal organizasyonlara değil, her topluluğa hitap etmesidir. Kurumsal olmayan topluluklar bile Jollin sayesinde etkinliklerini düzenleyip yönetebilir. Ayrıca, tüm etkinlik süreçlerini kolaylaştırır. Örneğin, kayak yapmak istediğinizde ayrı ayrı servis, ekipman kiralama, skipass ve yemek organize etmek zorunda kalırsınız. Jollin ile tüm bu işlemleri tek bir ödeme ile halledebilir, sadece eğlenmeye odaklanabilirsiniz.</p>
+              <br>
+                  <h3>Kullanıcılara ve Kulüplere Sağladığımız Avantajlar</h3>
+                  <p>Jollin, kullanıcıların şehirdeki etkinliklerden haberdar olmasını kolaylaştırır ve dolandırıcılığa karşı güvenli bir platform sunar. Kulüpler ve organizatörler için ise üye yönetimi, geniş kitlelere ulaşma ve etkinliklerin profesyonel bir şekilde organize edilmesini sağlar. Herkes için daha planlı, programlı ve güvenli bir etkinlik ortamı oluşturuyoruz.</p>
+              <br>
+                  <h3>Gelecek Hedeflerimiz</h3>
+                  <p>Jollin’in uzun vadeli hedefi, Türkiye’nin 81 iline ulaşarak her şehirde sosyal faaliyetlerin mümkün olduğunu göstermektir. Genç nüfusumuz ve doğamız, her türlü spor ve sosyal etkinlik için uygun bir ortam sunuyor. Amacımız, Türkiye’nin her köşesinde insanlara bu faaliyetleri keşfetme fırsatı sunmak.</p>
+              </div>      
+   
+          </div>
+          <br><br>
         </div>
-        <br><br>
       </div>
-    </div>
-  </section>
+    </section>
 
 <!-- End Bread Crumb Area Home 1 -->
 
