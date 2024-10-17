@@ -187,18 +187,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hakkımızda</title>
     <style>
-      body, html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        width: 100%;
-        
+      
+        .video-container {
+          position: relative;
+          height: 125vh;
+          overflow: hidden;
+        }
+        @media (max-width: 768px) {
+          .video-container {
+              height: 200vh; /* Increased height for mobile */
+          }
+  
+          .text-box {
+              padding: 15px;
+          }
+  
+          .text-box h1 {
+              font-size: 2em;
+          }
+  
+          p {
+              font-size: 0.9em;
+          }
       }
   
-      .video-container {
-        position: relative;
-        height: 100vh;
-        overflow: hidden;
+      @media (max-width: 480px) {
+          .video-container {
+              height: 250vh; /* Further increased height for very small screens */
+          }
+  
+          .text-box {
+              padding: 10px;
+          }
+  
+          .text-box h1 {
+              font-size: 1.8em;
+          }
+  
+          p {
+              font-size: 0.8em;
+          }
       }
   
       .video-container video {
@@ -243,8 +271,6 @@
         font-size: 1em;
         line-height: 1.5;
       }
-     
- 
     </style>
   </head>
   <body>
