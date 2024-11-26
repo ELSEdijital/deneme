@@ -141,7 +141,6 @@
     </div>
     <!-- End Search Bar Popup Home 2 -->
 
-    <!-- Start Mobile Menu Home 3 -->
     <div class="nft-mobile-menu-2 nft-mobile-menu nft-mobile-menu">
         <button class="close-menu float-end"><i class="fa-solid fa-xmark"></i></button>
         <a class='mobile-menu-logo' href="index.html"><img src="assets/images/logo/Beyazbüyük150.png" alt="VRE"></a>
@@ -156,7 +155,10 @@
                 
             </li>
             <li class="has-submenu"><a href="sıksorulansorular.html">Sık Sorulan Sorular</a>
-            
+                <ul class="submenu-wrapper">
+                    <li><a href="sıksorulansorular.html" class="font-size-1-18">Kullanıcılar için</a></li>
+                    <li><a href="sıksorulansorularkuluplericin.html" class="font-size-1-18">Kulüpler için</a></li>
+                </ul>
             </li>
             <li class="has-submenu"><a href="bilgilendirmeler.html">Bilgilendirmeler</a>
                 <ul class="submenu-wrapper">
@@ -173,13 +175,33 @@
                 <button type="submit" class="border-0">Go</button>
             </form>
         </div> -->
-        <div class="phone-number-mobile-menu">
-            <a href="#">+90(545) 321 65 58 </a>
-        </div>
-        <div class="mobile-menu-copy-right-text">
-            <p><span>© 2024</span> Jollin</p>
-        </div>
+        <!-- <div class="phone-number-mobile-menu">
+            <a href="#">+90 545 321 65 58</a>
+        </div> -->
     </div>
+    
+    <!-- <script>document.addEventListener("DOMContentLoaded", function () {
+        const submenuLinks = document.querySelectorAll(".has-submenu > a");
+        
+        submenuLinks.forEach(link => {
+            link.addEventListener("click", function (e) {
+                e.preventDefault();
+                
+                const submenu = this.nextElementSibling;
+                
+                if (submenu && submenu.classList.contains("submenu-wrapper")) {
+                    submenu.classList.toggle("open");
+                }
+            });
+        });
+    });
+    </script> -->
+    
+    <style>
+        .submenu-wrapper {
+    display: block !important; /* Tüm alt menüler açık */
+}
+      </style>
 
     <!-- Start Bread Crumb Area Home 1 -->
     <section class="bread-crumb-area" style="background-image: url('assets/images/banner/breadcrumb-bg.png');">
