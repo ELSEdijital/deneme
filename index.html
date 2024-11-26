@@ -509,7 +509,7 @@
                 <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
                     <button class="nav-link active font-size-1-24" id="nav-home-tab1" data-bs-toggle="tab"
                         data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
-                        aria-selected="true">Kullanıcılar için bilgilendirmeler</button>
+                        aria-selected="true" style="white-space: nowrap;">Kullanıcılar için bilgilendirmeler</button>
                     <button class="nav-link font-size-1-24" id="nav-profile-tab2" data-bs-toggle="tab"
                         data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
                         aria-selected="false">Kulüpler için bilgilendirmeler</button>
@@ -527,6 +527,21 @@
                     .nav-link:last-child {
                         margin-right: 0; /* Son butonun sağ tarafında boşluk olmasını engelle */
                     }
+                    @media (max-width: 768px) {
+    .nav-tabs {
+        justify-content: flex-start; /* Butonları sola hizala */
+        padding-left: 10px; /* Sol tarafta boşluk bırak */
+    }
+
+    .nav-link {
+        margin-right: 10px; /* Butonlar arasındaki boşluğu küçült */
+        text-align: left; /* Buton metinlerini sola hizala */
+        padding: 10px 10px; /* İç boşlukları düzenle */
+        width: auto; /* Genişliklerini içeriğe göre ayarla */
+        white-space: nowrap; /* Uzun metinlerin bir satırda kalmasını engelle */
+    }
+}
+
                 </style>
             </nav>
 
