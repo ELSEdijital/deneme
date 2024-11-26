@@ -222,7 +222,7 @@
                 <div class="main-title">
                     <h3 class="split-collab">Jollin Nasıl Kullanılır ? <span><img
                                 src="assets/images/shep/text-shep-2.png" alt=""></span></h3>
-                </div>
+                </div><br>
                 <p>Jollin, keşfetmeyi seven ve monotonluktan sıkılan herkes için burada! Hem kolayca etkinlik bulabilir, hem de hemen katılabilirsin. İşte Jollin’i kullanmanın püf noktaları</p>
             </div>
             <div class="marketing-wrapper">
@@ -242,6 +242,28 @@
                             aria-selected="false">Keşfet</button>
                     </div>
                 </nav>
+                <style>
+                    /* Mobil ekranlar için (768px ve altı) */
+@media (max-width: 768px) {
+    .nav-tabs {
+        display: flex;
+        flex-wrap: nowrap; /* Başlıkların bir satıra sığmasını sağlar */
+        justify-content: space-between; /* Başlıklar arasında eşit boşluk bırakır */
+        overflow-x: auto; /* Taşma durumunda kaydırmayı aktif eder */
+    }
+
+    .nav-link {
+        flex: 1; /* Tüm başlıklar eşit genişlikte olur */
+        text-align: center; /* Başlıkları ortalar */
+        font-size: 16px !important; /* Yazı boyutunu küçült */
+        padding: 3px; /* Başlıklar arası boşluğu ayarlar */
+        white-space: nowrap; /* Metnin bir satırda kalmasını sağlar */
+    }
+
+   
+}
+
+                </style>
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active tab-animation" id="nav-home" role="tabpanel">
                         <div class="marketing-inner">
